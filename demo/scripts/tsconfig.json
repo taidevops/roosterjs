@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "baseUrl": "../../",
+        "lib": ["es6", "dom"],
+        "jsx": "react",
+        "sourceMap": true,
+        "removeComments": true,
+        "noImplicitAny": true,
+        "preserveConstEnums": false,
+        "noUnusedLocals": true,
+        "paths": {
+            "roosterjs": ["packages/roosterjs/lib/index"],
+            "roosterjs/lib/*": ["packages/roosterjs/lib/*"]
+        }
+    },
+    "include": ["./**/*.ts", "./**/*.tsx"]
+}
