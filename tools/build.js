@@ -15,6 +15,7 @@ const pack = require('./buildTools/pack');
 const dts = require('./buildTools/dts');
 const buildDemoStep = require('./buildTools/buildDemo');
 const buildDocumentStep = require('./buildTools/buildDocument');
+const publishStep = require('./buildTools/publish');
 const allTasks = [
     tslintStep,
     checkDependencyStep,
@@ -30,6 +31,7 @@ const allTasks = [
     dts.dtsAmd,
     buildDemoStep,
     buildDocumentStep,
+    publishStep,
 ];
 
 // Commands
@@ -44,6 +46,7 @@ const commands = [
     'builddemo', // Build the demo site
     'buildcommonjs', // Build in CommonJs mode,
     'buildamd', // Build in AMD mode,
+    'publish', // Publish roosterjs packages to npm
     'builddoc', // Build documents
 ];
 
