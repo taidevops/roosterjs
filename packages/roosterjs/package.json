@@ -1,5 +1,5 @@
 {
-    "name": "roosterjs",
+    "name": "@tai-ui/roosterjs",
     "description": "A simple facade for all roosterjs code",
     "dependencies": {},
     "main": "./lib/index.ts"
