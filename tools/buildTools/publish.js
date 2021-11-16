@@ -29,7 +29,7 @@ function publish(options) {
 
             try {
                 const basePublishString = `npm publish`;
-                const publishString = basePublishString + ` --tag ${tagname}`;
+                const publishString = basePublishString + ` --tag ${tagname}` + ` --access public`;
                 exec(publishString, {
                     stdio: 'inherit',
                     cwd: path.join(distPath, packageName),
