@@ -20,12 +20,15 @@
 
     "references": [
         {
+            "path": "roosterjs-editor-types/tsconfig.child.json"
+        },
+        {
             "path": "roosterjs/tsconfig.child.json"
         }
     ],
     "include": [],
     "typedocOptions": {
-        "entryPoints": ["roosterjs/lib/index.ts"],
+        "entryPoints": ["roosterjs-editor-types/lib/index.ts", "roosterjs/lib/index.ts"],
         "plugin": ["typedoc-plugin-external-module-map"],
         "out": "../dist/deploy/docs",
         "readme": "../reference.md",
