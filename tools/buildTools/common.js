@@ -28,7 +28,7 @@ function collectPackages() {
 
     packagePaths.forEach(path => {
         const packageJson = JSON.parse(fs.readFileSync(path).toString());
-        const packageName = packageJson.name.split('/')[1];
+        const packageName = packageJson.name;
         const depsMap = {};
 
         if ('dependencies' in packageJson) {
@@ -71,7 +71,7 @@ function err(message) {
 function readPackageJson(packageName, readFromSourceFolder) {
     const packageJsonFilePath = path.join(
         readFromSourceFolder ? packagesPath : distPath,
-        packageName,
+        packageName.split('/')[1],
         'package.json'
     );
     const content = fs.readFileSync(packageJsonFilePath);

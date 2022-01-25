@@ -1,6 +1,6 @@
 {
     "name": "@tai-ui/roosterjs",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Framework-independent javascript editor",
     "repository": {
         "type": "git",

@@ -13,7 +13,7 @@ function buildDocument() {
         let value = config[key];
         cmd += ` --${key} ${value}`;
     }
-    console.log(cmd);
+
     runNode(cmd, rootPath, 'pipe');
 }
 
